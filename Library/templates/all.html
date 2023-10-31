@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>All Books</title>
+</head>
+<body dir="rtl">
+    لیست کتاب ها : 
+{% for t in all_books %}
+    <p><a href="{% url 'book_detail' t.id %}">{{ t.title }}</a></p>
+{% endfor %}
+</body>
+</html>

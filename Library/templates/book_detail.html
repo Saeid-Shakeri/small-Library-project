@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Book Detail</title>
+</head>
+<body dir="rtl">
+
+<p>عنوان کتاب : {{ book.title }}</a></p>
+<P><a href="{% url 'author_detail' author.id %}">نام نویسنده : {{ book.author.all|join:", " }}</a></P>
+<p>سال چاپ : {{ book.year }}</p>
+<p>شابک : {{ book.isbn }}</p>
+<p> زبان : {{ book.language }}</p>
+<p>انتشارات : {{ book.publishers }}</p>
+
+</body>
+</html>

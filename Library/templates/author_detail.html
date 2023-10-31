@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Author Detail</title>
+</head>
+<body dir="rtl">
+    
+
+<p> نام : {{ author.first_name }}</p>
+   <p> نام خانوادگی :  {{ author.last_name }}</p>
+   <p> ملیت : {{ author.nationality}}
+   
+    <p><a href="{% url 'author_books_list'  author.id %}">لیست کتاب های  {{ author.first_name }} {{author.last_name}}</p>
+
+</body>
+</html>
